@@ -1,0 +1,14 @@
+# Render 部署配置（https://render.com）
+# 使用方式：把本仓库推送到 GitHub 后，在 Render 选 New > Blueprint，按本文件自动创建服务
+services:
+  - type: web
+    name: qingke-changxue
+    runtime: node
+    plan: free
+    buildCommand: npm run build
+    startCommand: npm start
+    healthCheckPath: /healthz
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: "24"
