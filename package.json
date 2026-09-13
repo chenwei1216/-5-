@@ -6,13 +6,14 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "start": "node api/server.ts",
+    "start": "tsx api/server.ts",
+    "start:native": "node api/server.ts",
     "lint": "eslint .",
     "preview": "vite preview",
     "check": "tsc -b --noEmit"
   },
   "engines": {
-    "node": ">=24"
+    "node": ">=18"
   },
   "dependencies": {
     "bcrypt": "^6.0.0",
@@ -25,6 +26,7 @@
     "react-dom": "^18.3.1",
     "react-router-dom": "^7.3.0",
     "tailwind-merge": "^3.0.2",
+    "tsx": "^4.19.2",
     "uuid": "^14.0.1",
     "zustand": "^5.0.3"
   },
