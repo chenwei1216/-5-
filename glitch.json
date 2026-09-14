@@ -1,7 +1,0 @@
-{
-  "install": "npm install --include=dev && npm run build",
-  "start": "tsx api/server.ts",
-  "watch": {
-    "ignore": ["api/data.json", "api/uploads", "dist", "node_modules"]
-  }
-}
